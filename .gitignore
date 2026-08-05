@@ -1,0 +1,8 @@
+main.tex
+.DS_Store
+__pycache__/
+*.pyc
+plots/
+labels/
+ground-truth-labels/
+

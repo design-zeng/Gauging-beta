@@ -381,8 +381,8 @@ class Perception:
 
         nearest_dists1 = self.DIST_MATRIX[cluster1, nearest_clusters1][0]
         nearest_dists2 = self.DIST_MATRIX[cluster2, nearest_clusters2][0]
-        nearest_dists1 = np.delete(nearest_dists1, np.where(nearest_dists1 == np.Inf))
-        nearest_dists2 = np.delete(nearest_dists2, np.where(nearest_dists2 == np.Inf))
+        nearest_dists1 = np.delete(nearest_dists1, np.where(nearest_dists1 == np.inf))
+        nearest_dists2 = np.delete(nearest_dists2, np.where(nearest_dists2 == np.inf))
 
         mean_e, std_e = np.mean([*nearest_dists1, *nearest_dists2]), np.std([*nearest_dists1, *nearest_dists2])
 
