@@ -1,5 +1,4 @@
 import random
-import math
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
@@ -15,7 +14,7 @@ class lower_density_selection:
         self.points = points
 
     def calculate_distance(self, p1, p2):
-        return math.sqrt((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2)
+        return np.linalg.norm(np.array(p1) - np.array(p2))
 
     def find_longest_distance(self, points):
         max_distance = 0
