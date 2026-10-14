@@ -1,0 +1,5 @@
+USPS, MNIST, cifar10: Sample 3000 data from the training set. size: (3000, 513) The last column in the file is the label.
+
+STL-10: size (5000, 513)
+
+COIL-20: size(1440, 512)
